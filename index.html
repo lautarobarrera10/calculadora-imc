@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚖️ Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+    <main class="calculadora">
+        <p>Para calcular su índice de masa corporal, ingrese su estatura y peso.</p>
+        <span>Estatura en centímetros:</span>
+        <input type="number" name="" id="estatura">
+        <span>Peso en kilogramos:</span>
+        <input type="number" name="" id="peso">
+        <button type="button" id="calcular-button">Calcular IMC</button>
+    </main>
+    <section class="resultado">
+        <h4>Resultado</h4>
+        <div class="resultado-container">
+            <p class="resultado-text"></p>
+            <p class="resultado-number"></p>
+        </div>
+    </section>
+    <section class="tabla">
+        <div class="parte-de-arriba">
+            <p>IMC</p>
+            <p>DIAGNÓSTICO</p>
+        </div>
+        <div class="bajo-peso">
+            <p>Bajo peso</p>
+            <p>menos de 18.5</p>
+        </div>
+        <div class="peso-normal">
+            <p>Peso normal</p>
+            <p>18.5 - 25</p>
+        </div>
+        <div class="sobrepeso">
+            <p>Sobrepeso</p>
+            <p>25 - 30</p>
+        </div>
+        <div class="obesidad-1">
+            <p>Obesidad tipo 1</p>
+            <p>30 - 35</p>
+        </div>
+        <div class="obesidad-2">
+            <p>Obesidad tipo 2</p>
+            <p>35 - 40</p>
+        </div>
+        <div class="obesidad-3">
+            <p>Obesidad tipo 3</p>
+            <p>más de 40</p>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

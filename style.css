@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./header.png");
+}
+
+header h1 {
+    padding: 12px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+main.calculadora {
+    margin: 40px auto;
+    padding: 16px 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+
+main.calculadora p:first-child {
+    margin-bottom: 32px;
+}
+
+main.calculadora input {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+main.calculadora button {
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+}
+
+section.resultado {
+    display: none;
+    margin: 0 auto;
+    width: 300px;
+}
+
+section.resultado.active {
+    display: block;
+}
+
+section.resultado .resultado-container {
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #53E1E5;
+}
+
+section.resultado .resultado-container p:nth-child(2) {
+    font-weight: bold;
+}
+
+section.tabla {
+    margin: 40px auto;
+    width: 300px;
+}
+
+section.tabla div {
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.tabla div.bajo-peso {
+    background-color: #53E1E5;
+}
+
+section.tabla div.peso-normal {
+    background-color: #C9E26C;
+}
+
+section.tabla div.sobrepeso {
+    background-color: #FFDE63;
+}
+
+section.tabla div.obesidad-1 {
+    background-color: #FEA851;
+}
+
+section.tabla div.obesidad-2 {
+    background-color: #FF9251;
+}
+
+section.tabla div.obesidad-3 {
+    background-color: #EB5A5F;
+}
+
+@media screen and (min-width:800px) {
+    body {
+        margin: 0 auto;
+        max-width: 1500px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 120px 140px;
+        background-image: url("./header.png");
+        background-size: cover;
+    }
+    header {
+        grid-column: 1/3;
+        background: none;
+    }
+    main.calculadora {
+        height: fit-content;
+        grid-row: 2/4;
+        grid-column: 1;
+        background-color: white;
+    }
+    section.resultado {
+        height: fit-content;
+        padding: 12px;
+        grid-row: 2;
+        grid-column: 2;
+        border-radius: 5px;
+        background-color: white;
+        box-sizing: border-box;
+    }
+    section.tabla {
+        grid-column: 2;
+        background-color: white;
+        border-radius: 5px;
+    }
+}
